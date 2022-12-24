@@ -1,5 +1,9 @@
 import { Typing } from "../../src/lib/typing";
 
+test("Create a Object", () => {
+  new Typing("test");
+});
+
 test("Typing a alphabet character", () => {
   let typing = new Typing("abc");
   let result = typing.type("a");
