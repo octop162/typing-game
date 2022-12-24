@@ -12,19 +12,25 @@
 
 ### 開発
 
-install
+インストール
 
 ```
 npm install
 ```
 
-test 
+確認
+
+```
+npm start
+```
+
+テスト
 
 ```
 npm test
 ```
 
-format 
+フォーマッタ
 
 ```
 npm run format
