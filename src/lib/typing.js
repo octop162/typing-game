@@ -11,7 +11,7 @@ export class Typing {
    * @returns {boolean} is success
    */
   type(character) {
-    if (this.isValidNextCharacter(character)) {
+    if (this.#isValidNextCharacter(character)) {
       this.typing += character;
       this.remain = this.remain.substring(1);
       return true;
@@ -24,7 +24,7 @@ export class Typing {
    * check next character
    * @returns {boolean} is valid
    */
-  isValidNextCharacter(character) {
+  #isValidNextCharacter(character) {
     return this.remain[0] === character;
   }
 
