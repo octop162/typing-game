@@ -1,9 +1,5 @@
 # typing game
 
-## 機能
-* あああああ
+## 画面遷移
 
-## 図作ってみる
-
-![](images/figure.drawio.svg)
-
+![画面遷移](images/transition.drawio.svg)
