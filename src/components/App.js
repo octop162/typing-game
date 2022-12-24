@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <h2 className="title">typing game</h2>
+      <p id="message">press space</p>
     </div>
   );
 }
