@@ -3,5 +3,7 @@ import "@testing-library/jest-dom";
 import App from "../../src/components/App";
 
 test("dummy", () => {
-  expect(1).toBe(1);
+  render(<App />);
+  const title = screen.getByText(/typing game/i);
+  expect(title).toBeInTheDocument();
 });
