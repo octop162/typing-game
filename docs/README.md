@@ -5,5 +5,5 @@
 
 ## 図作ってみる
 
-![](images/figure.svg.drawio)
+![](images/figure.drawio.svg)
 
