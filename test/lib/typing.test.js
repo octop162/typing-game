@@ -1,4 +1,4 @@
-import Typing from "../lib/typing";
+import { Typing } from "../../src/lib/typing";
 
 test("Typing a alphabet character", () => {
   let typing = new Typing("abc");
@@ -7,7 +7,14 @@ test("Typing a alphabet character", () => {
   expect(typing.typing).toBe("a");
 });
 
-test("Typing alphabet complete", () => {
+test("Typing a invalid alphabet character", () => {
+  let typing = new Typing("abc");
+  let result = typing.type("z");
+  expect(result).toBe(false);
+  expect(typing.typing).toBe("");
+});
+
+test("Complete alphabet", () => {
   let typing = new Typing("abc");
   typing.type("a");
   typing.type("b");
@@ -16,7 +23,7 @@ test("Typing alphabet complete", () => {
   expect(typing.isComplete()).toBe(true);
 });
 
-test("Typing alphanet not complete", () => {
+test("Not Complete alphabet", () => {
   let typing = new Typing("abc");
   typing.type("a");
   expect(typing.typing).toBe("a");

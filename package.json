@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "jest",
-    "format": "prettier --write lib test"
+    "format": "prettier --write src test"
   },
   "author": "",
   "license": "ISC",
